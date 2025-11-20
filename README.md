@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+📂 Better Call Monad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+“In this world, if your swaps go wrong, your PNL vanishes, or your floor starts collapsing…
+there's still someone to call.”
 
-Currently, two official plugins are available:
+Better Call Monad is a creatively styled dApp discovery interface inspired by the atmosphere of Better Call Saul.
+Rather than presenting a typical list of applications, users are dropped into a private lawyer’s office, complete with cinematic sound, animated smoke, and a desk full of case files.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Each folder represents a confidential client case related to the on-chain experience.
+Opening a folder reveals curated dApp recommendationsin a formal case-file format — structured like investigation notes.
 
-## React Compiler
+No dashboards. No lists. Just pure legal drama for degens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎬 Concept
 
-## Expanding the ESLint configuration
+Fully immersive UX inspired by the visual language of Better Call Saul
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Interactive office room scene (background + audio + animated smoke)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+dApps are presented as legal cases, not navigation items
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Each case opens as a manila folder with printed documents, including:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A case title
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+A confidential note
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+A table-style registry of external solutions ("recommended tools")
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Future entries are intentionally marked as “ENTRY RESERVED”
+
+The experience is intentionally slightly exaggerated — blending serious corporate legal tone with subtle degen humor.
+
+🛠️ Tech Stack
+Frontend:   Vite + React + TypeScript  
+Styling:    Custom CSS (hand-crafted, cinematic, no UI libraries)  
+Assets:     Original generated visuals + ambient soundtrack  
+Deployment: Vercel
+
+🚀 Development
+
+Run locally:
+
+npm install
+npm run dev
+
+
+Build:
+
+npm run build
+
+🔗 Deployment & Repository
+Resource	Link
+Live Demo	https://better-call-monad.vercel.app/
+
+GitHub Repo	https://github.com/vikions/better-call-monad
+
+
+📦 Future Enhancements
+
+Animated neon office sign (“Better Call Monad”)
+
+Ceiling fan motion & paper draft movement
+
+Additional “case files” revealed after mainnet expansion
+
+Optional voiceover introduction ("You’re in trouble. Call now.")
+
+💼 Final Note
+
+“Whatever your on-chain situation is…
+don’t panic — and before doing anything irrational…
+Better. Call. Monad.” ⚖️
