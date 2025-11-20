@@ -96,7 +96,7 @@ function App() {
         .play()
         .then(() => setIsMusicPlaying(true))
         .catch(() => {
-          // ignore autoplay errors
+          
         });
     } else {
       audioRef.current.pause();
@@ -108,16 +108,16 @@ function App() {
 
   return (
     <div className="app-root">
-      {/* Фон кабинета */}
+     
       <div className="bg-layer" />
 
-      {/* Дым от пепельницы слева от лампы */}
+      
       <div className="ash-smoke-container">
         <div className="ash-smoke ash-smoke-1" />
         <div className="ash-smoke ash-smoke-2" />
       </div>
 
-      {/* Телевизор c рекламой */}
+     
       <button className="tv-button" onClick={() => setIsAdOpen(true)}>
         <div className="tv-frame">
           <div className="tv-screen">
@@ -127,7 +127,7 @@ function App() {
         </div>
       </button>
 
-      {/* Папки внизу */}
+     
       <div className="cases-row">
         {CASES.map((c) => (
           <button
@@ -140,7 +140,7 @@ function App() {
         ))}
       </div>
 
-      {/* Модалка-кейс (открытая папка) */}
+      
       {activeCase && (
         <div className="case-overlay" onClick={() => setActiveCaseId(null)}>
           <div className="case-modal" onClick={(e) => e.stopPropagation()}>
@@ -157,7 +157,7 @@ function App() {
 
                 <h3 className="case-section-title">Recommended dApps</h3>
 
-                {/* Таблица записей по делу */}
+                
                 <table className="case-table">
                   <thead>
                     <tr>
@@ -183,7 +183,7 @@ function App() {
                       </tr>
                     ))}
 
-                    {/* Пустые строки — намёк на то, что кейс ещё пополняется */}
+                    
                     {Array.from({
                       length: Math.max(0, 5 - activeCase.projects.length),
                     }).map((_, idx) => (
@@ -211,7 +211,7 @@ function App() {
         </div>
       )}
 
-      {/* Модалка с рекламным постером */}
+     
       {isAdOpen && (
         <div className="overlay" onClick={() => setIsAdOpen(false)}>
           <div className="overlay-inner" onClick={(e) => e.stopPropagation()}>
@@ -230,12 +230,12 @@ function App() {
         </div>
       )}
 
-      {/* Кнопка Play / Pause для музыки */}
+      
       <button className="music-button" onClick={handleToggleMusic}>
         {isMusicPlaying ? "⏸ Pause" : "▶ Play theme"}
       </button>
 
-      {/* Фоновая музыка */}
+      
       <audio ref={audioRef} src="/assets/bgm.mp3" loop />
     </div>
   );
