@@ -15,7 +15,7 @@ No dashboards. No lists. Just pure legal drama for degens.
 
 Fully immersive UX inspired by the visual language of Better Call Saul
 
-Interactive office room scene (background + audio + animated smoke)
+Interactive office room scene 
 
 dApps are presented as legal cases, not navigation items
 
