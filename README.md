@@ -1,73 +1,65 @@
-📂 Better Call Monad
 
-“In this world, if your swaps go wrong, your PNL vanishes, or your floor starts collapsing…
-there's still someone to call.”
+# Better Call Monad
 
-Better Call Monad is a creatively styled dApp discovery interface inspired by the atmosphere of Better Call Saul.
-Rather than presenting a typical list of applications, users are dropped into a private lawyer’s office, complete with cinematic sound, animated smoke, and a desk full of case files.
+An immersive dApp discovery experience styled as a lawyer's office — inspired by the visual tone of "Better Call Saul." Instead of standard lists or dashboards, dApps are presented as confidential case files in a cinematic office scene.
 
-Each folder represents a confidential client case related to the on-chain experience.
-Opening a folder reveals curated dApp recommendationsin a formal case-file format — structured like investigation notes.
+## Concept
 
-No dashboards. No lists. Just pure legal drama for degens.
+- Immersive office scene with ambient sound and visuals
+- dApps presented as "case files" with notes and recommended tools
+- Focus on storytelling and discovery rather than conventional navigation
 
-🎬 Concept
+## Features
 
-Fully immersive UX inspired by the visual language of Better Call Saul
+- Cinematic UI: animations, ambient soundtrack, and hand-crafted visuals
+- Case-style presentation: title, confidential notes, and recommended tools
+- Progressive content: future case files marked as reserved
 
-Interactive office room scene 
+## Tech Stack
 
-dApps are presented as legal cases, not navigation items
+- Frontend: Vite + React + TypeScript
+- Styling: Custom CSS (no UI libraries)
+- Assets: Original visuals and ambient audio
+- Deployment: Vercel (demo link below)
 
-Each case opens as a manila folder with printed documents, including:
+## Quick Start
 
-A case title
+Install dependencies and run the dev server:
 
-A confidential note
-
-A table-style registry of external solutions ("recommended tools")
-
-Future entries are intentionally marked as “ENTRY RESERVED”
-
-The experience is intentionally slightly exaggerated — blending serious corporate legal tone with subtle degen humor.
-
-🛠️ Tech Stack
-Frontend:   Vite + React + TypeScript  
-Styling:    Custom CSS (hand-crafted, cinematic, no UI libraries)  
-Assets:     Original generated visuals + ambient soundtrack  
-Deployment: Vercel
-
-🚀 Development
-
-Run locally:
-
+```bash
 npm install
 npm run dev
+```
 
+Build for production:
 
-Build:
-
+```bash
 npm run build
+```
 
-🔗 Deployment & Repository
-Resource	Link
-Live Demo	https://better-call-monad.vercel.app/
+Preview the production build (optional):
 
-GitHub Repo	https://github.com/vikions/better-call-monad
+```bash
+npm run preview
+```
 
+## Links
 
-📦 Future Enhancements
+- Live demo: https://better-call-monad.vercel.app/
+- Repository: https://github.com/vikions/better-call-monad
 
-Animated neon office sign (“Better Call Monad”)
+## Contributing
 
-Ceiling fan motion & paper draft movement
+Contributions are welcome. Open issues or PRs for bugs, improvements, or new case files.
 
-Additional “case files” revealed after mainnet expansion
+## License
 
-Optional voiceover introduction ("You’re in trouble. Call now.")
+Check the repository for a `LICENSE` file.
 
-💼 Final Note
+---
 
-“Whatever your on-chain situation is…
-don’t panic — and before doing anything irrational…
-Better. Call. Monad.” ⚖️
+If you'd like, I can also:
+
+- open a small PR with this change,
+- add a screenshot or GIF to the top of the README,
+- or translate the README into Russian.
